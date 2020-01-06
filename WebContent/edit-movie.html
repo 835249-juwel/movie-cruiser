@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Movie</title>
+<link rel="shortcut icon" href="images\logo.png" />
+<link rel="stylesheet" type="text/css" href="styles\style.css" />
+<script src="js/script.js">
+    
+</script>
+</head>
+<body>
+    <header>
+        <h2 class="heading">Movie Cruiser</h2>
+        <img src="images\logo.png" alt="Logo" width=60 height=60 />
+        <nav>
+            <a class="movie" href="movie-list-admin.html">Movies</a>
+        </nav>
+    </header>
+    <form name="validation" method="post" action="edit-movie-status.html"
+        onsubmit="return movieValidation()">
+
+        <table class="table-row2" cellspacing="10">
+            <tr>
+                <td colspan="4"><h1>Edit Movie</h1></td>
+            </tr>
+            <tr>
+                <td colspan="4"><label for="title">Title</label></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input id="title" type="text" size="90" name="title"
+                    autocomplete="off" /><span id="terror"></span></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td><label for="boxOffice">Gross($)</label></td>
+                <td><label for="active">Active</label></td>
+                <td><label for="dateOfLaunch">Date Of Launch</label></td>
+                <td><label for="genre">Genre</label></td>
+            </tr>
+            <tr>
+                <td><input id="boxOffice" type="text" name="boxOffice" autocomplete="off" /><span
+                    id="perror"></span></td>
+                <td><input id="yes" type="radio" name="active" value="yes" /><label for="yes">Yes</label><input
+                    id="no" type="radio" name="active" value="no" /><label for="no">No</label></td>
+                <td><input id="dateOfLaunch" type="date" name="dateOfLaunch" /><span
+                    id="derror"></span></td>
+                <td><select name="genre">
+                        <option value="">Select Genre</option>
+                        <option value="sciencefiction">Science Fiction</option>
+                        <option value="superhero">Super hero</option>
+                        <option value="romance">Romance</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="thriller">Thriller</option>
+                </select><span id="cerror"></span></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td><input class="checkbox" type="checkbox" value="hasTeaser" name="hasTeaser"
+                    id="teaser" /><label for="teaser" class="teaser">Has Teaser</label></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input class="submit" type="submit" value="Save" /></td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <p class="footer">Copyright&nbsp;&copy;&nbsp;2019</p>
+    </footer>
+</body>
+</html>

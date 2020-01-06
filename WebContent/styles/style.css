@@ -1,0 +1,145 @@
+/*for header*/
+header {
+    top: 0%;
+    background-color: #365a9c;
+    color: #ffffff;
+    min-width: 100%;
+    height: 7%;
+    position: fixed;
+    left: 0%;
+    font-family: Bahnschrift Light Condensed;
+}
+/*for movie cruiser header*/
+header h2 {
+    position: fixed;
+    margin-top: 0.8%;
+}
+/* movie link on nav*/
+header nav .movie {
+    position: fixed;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Bahnschrift SemiBold;
+}
+/* favorites link on nav*/
+header nav .favorites {
+    position: fixed;
+    margin-left: 4%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Bahnschrift SemiBold;
+}
+/*image in header*/
+header img {
+    top: 0%;
+    margin-left: 13%;
+    position: fixed;
+}
+/*heading movie cruiser*/
+.heading {
+    margin-left: 1%;
+    font-size: 200%;
+    font-family: Bahnschrift SemiBold;
+}
+
+nav {
+    position: fixed;
+    top: 2.5%;
+    margin-left: 85%;
+}
+
+table {
+    top: 15%;
+    margin-left: 10%;
+    position: fixed;
+}
+/*for title in table*/
+table .title {
+    text-align: left;
+}
+/*for boxoffice in table*/
+table .boxOffice {
+    text-align: right;
+}
+
+table th {
+    font-size: 20px;
+    font-family: Bahnschrift SemiBold;
+}
+
+table .last-row {
+    font-size: 20px;
+}
+
+table h1 {
+    font-size: 35px;
+    font-family: Bahnschrift SemiBold;
+    text-align: left;
+}
+/*for table link*/
+table a {
+    color: #000000;
+}
+/* classes for table edit-movie*/
+.table-row2 {
+    top: 15%;
+    margin-left: 10%;
+    position: fixed;
+    text-align: left;
+    font-size: 17px;
+    font-family: Bahnschrift SemiBold;
+}
+/*on table edit-movie*/
+table .submit {
+    padding: 10px;
+    margin: 10px;
+    border: 10px;
+    background-color: #1a46a3;
+    color: #ffffff;
+    width: 30%;
+    font-size: 15px;
+    font-family: Bahnschrift SemiBold;
+}
+
+table .checkbox {
+    height: 22px;
+    width: 22px;
+}
+
+table p {
+    font-size: 27px;
+    font-family: Bahnschrift SemiBold;
+    color: #0ecc1b;
+}
+/*on table edit-movie for label teaser*/
+.teaser {
+    margin-top: 0.4%;
+    position: fixed;
+}
+/*in table cart-empty*/
+table .paracart {
+    color: #808791;
+}
+
+table .paracart a {
+    color: #1d98f0;
+}
+/*for footer*/
+footer {
+    bottom: 0%;
+    background-color: #808791;
+    color: #000000;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    width: 100%;
+    height: 5%;
+    font-family: Bahnschrift SemiBold SemiConden;
+}
+
+footer .footer {
+    margin-top: 0.8%;
+    margin-left: 1%;
+    position: fixed;
+    font-size: 17px;
+}
