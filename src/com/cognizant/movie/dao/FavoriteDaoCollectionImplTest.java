@@ -15,14 +15,14 @@ public class FavoriteDaoCollectionImplTest {
     }
 
     public static void testAddFavorites() {
-        System.out.println("Movie added into favorites");
+        System.out.println("Movie added into favorites\n");
         favoritedao.addFavoritesById(1, 2);// 1 is userId and 2 is movieId
         favoritedao.addFavoritesById(1, 3);// 1 is userId and 3 is movieId
     }
 
     public static void testGetAllFavorites() {
         try {
-            System.out.println("Retrieving all the movies from favorites");
+            System.out.println("Retrieving all the movies from favorites\n");
             List<Movie> list = favoritedao.getAllFavorites(1).getFavoriteList();// 1 is userId
             for (Movie movie : list) {
                 System.out.println(movie);
@@ -34,7 +34,7 @@ public class FavoriteDaoCollectionImplTest {
     }
 
     public static void testRemoveFavorites() {
-        System.out.println("Favorites Removed");
+        System.out.println("Favorite Removed\n");
         favoritedao.removeFavoritesById(1, 3);
     }
 
