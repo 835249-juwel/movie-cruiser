@@ -36,7 +36,7 @@
                 <td class="title">${movieList.getTitle()}</td>
                 <td class="boxOffice">$ ${movieList.getBoxOffice()}</td>
                 <td align="center">${movieList.getGenre()}</td>
-                <td align="center"><a href="RemoveFavorite?movieId=${movieList.getMovieId()}">Remove</a></td>
+                <td align="center"><a href="RemoveFavorite?movieId=${movieList.getMovieId()}">Delete</a></td>
             </tr>
         </c:forEach>
 
