@@ -4,18 +4,7 @@ import java.util.List;
 
 public class Favorite {
     private List<Movie> favoriteList;
-    private int total;
-
-    // Generates Default & Parameterized Constructor, Getter/Setter and toString()
-    public Favorite() {
-        // TODO Auto-generated constructor stub
-    }
-
-    public Favorite(List<Movie> favoriteList, int total) {
-        super();
-        this.favoriteList = favoriteList;
-        this.total = total;
-    }
+    private int noOfFavorites;
 
     public List<Movie> getFavoriteList() {
         return favoriteList;
@@ -25,17 +14,28 @@ public class Favorite {
         this.favoriteList = favoriteList;
     }
 
-    public int getTotal() {
-        return total;
+    public int getNoOfFavorites() {
+        return noOfFavorites;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
+    public void setNoOfFavorites(int noOfFavorites) {
+        this.noOfFavorites = noOfFavorites;
+    }
+
+    public Favorite(List<Movie> favoriteList, int noOfFavorites) {
+        super();
+        this.favoriteList = favoriteList;
+        this.noOfFavorites = noOfFavorites;
+    }
+
+    public Favorite() {
+        super();
+        // TODO Auto-generated constructor stub
     }
 
     @Override
     public String toString() {
-        return "Favorite [favoriteList=" + favoriteList + ", total=" + total + "]";
+        return "Favorite [favoriteList=" + favoriteList + ", noOfFavorites=" + noOfFavorites + "]";
     }
 
 }

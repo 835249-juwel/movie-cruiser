@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>Edit Movie Status</title>
@@ -7,13 +8,9 @@
 </head>
 <body>
     <header>
-        <h2 class="heading">Movie Cruiser</h2>
-        <img src="images\logo.png" alt="Logo" width=60 height=60 />
-
-        <nav>
-            <a class="movie" href="movie-list-admin.html">Movies</a>
-        </nav>
-    </header>
+    <h2 class="heading">Movie Cruiser</h2>
+    <img src="images\logo.png" alt="Logo" width=60 height=60 /> <nav> <a class="movie"
+        href="ShowMovieListAdmin">Movies</a> </nav> </header>
     <table cellspacing="10">
         <tr>
             <td colspan="4"><h1>Edit Movie Status</h1></td>
@@ -23,7 +20,7 @@
         </tr>
     </table>
     <footer>
-        <p class="footer">Copyright&nbsp;&copy;&nbsp;2019</p>
+    <p class="footer">Copyright&nbsp;&copy;&nbsp;2019</p>
     </footer>
 </body>
 </html>
