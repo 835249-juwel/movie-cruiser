@@ -35,7 +35,7 @@
             <c:forEach items="${movieList}" var="movieList">
                 <tr>
                     <td class="title">${movieList.getTitle()}</td>
-                    <td class="boxoffice">${movieList.getBoxOffice()}</td>
+                    <td class="boxoffice">$ ${movieList.getBoxOffice()}</td>
                     <td align="center">${movieList.getGenre()}</td>
                     <td align="center"><c:choose>
                             <c:when test="${movieList.isHasTeaser()==true }">Yes</c:when>
