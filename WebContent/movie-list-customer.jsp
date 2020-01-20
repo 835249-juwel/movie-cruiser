@@ -35,12 +35,13 @@
             <c:forEach items="${movieList}" var="movieList">
                 <tr>
                     <td class="title">${movieList.getTitle()}</td>
-                    <td class="boxoffice">$ ${movieList.getBoxOffice()}</td>
+                    <td class="boxoffice"><f:formatNumber type="currency"
+                            value="${movieList.getBoxOffice()}"></f:formatNumber></td>
                     <td align="center">${movieList.getGenre()}</td>
                     <td align="center"><c:choose>
                             <c:when test="${movieList.isHasTeaser()==true }">Yes</c:when>
                             <c:otherwise>No</c:otherwise>
-                        </c:choose>
+                        </c:choose></td>
                     <td align="center"><a
                         href="AddToFavorite?movieId=${movieList.getMovieId()}">Add to Favorite</a></td>
                 </tr>

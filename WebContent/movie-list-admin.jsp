@@ -30,18 +30,19 @@
         <c:forEach items="${movieList}" var="movieList">
             <tr>
                 <td class="title">${movieList.getTitle()}</td>
-                <td class="boxoffice">$ ${movieList.getBoxOffice()}</td>
+                <td class="boxoffice"><f:formatNumber type="currency"
+                        value="${movieList.getBoxOffice()}"></f:formatNumber></td>
                 <td align="center"><c:choose>
                         <c:when test="${movieList.isActive()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
-                    </c:choose>
+                    </c:choose></td>
                 <td align="center"><f:formatDate value="${movieList.getDateOfLaunch()}"
                         pattern="dd/MM/yyyy" /></td>
                 <td align="center">${movieList.getGenre()}</td>
                 <td align="center"><c:choose>
                         <c:when test="${movieList.isHasTeaser()==true }">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
-                    </c:choose>
+                    </c:choose></td>
                 <td align="center"><a href="ShowEditMovie?movieId=${movieList.getMovieId()}">Edit</a></td>
             </tr>
         </c:forEach>

@@ -34,7 +34,8 @@
         <c:forEach items="${movieList}" var="movieList">
             <tr>
                 <td class="title">${movieList.getTitle()}</td>
-                <td class="boxOffice">$ ${movieList.getBoxOffice()}</td>
+                <td class="boxOffice"><f:formatNumber type="currency"
+                        value="${movieList.getBoxOffice()}"></f:formatNumber></td>
                 <td align="center">${movieList.getGenre()}</td>
                 <td align="center"><a href="RemoveFavorite?movieId=${movieList.getMovieId()}">Delete</a></td>
             </tr>
