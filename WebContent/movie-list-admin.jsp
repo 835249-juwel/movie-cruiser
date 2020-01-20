@@ -30,7 +30,7 @@
         <c:forEach items="${movieList}" var="movieList">
             <tr>
                 <td class="title">${movieList.getTitle()}</td>
-                <td class="boxoffice">${movieList.getBoxOffice()}</td>
+                <td class="boxoffice">$ ${movieList.getBoxOffice()}</td>
                 <td align="center"><c:choose>
                         <c:when test="${movieList.isActive()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
