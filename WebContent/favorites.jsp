@@ -20,9 +20,9 @@
             <td><h1>Favorites</h1></td>
         </tr>
         <tr>
-            <td colspan="5"><c:if test="${removeFavoriteStatus==true }">
+            <th colspan="5"><c:if test="${removeFavoriteStatus==true }">
                     <p>Movie removed from Favorites successfully</p>
-                </c:if></td>
+                </c:if></th>
         </tr>
         <col width="250" />
 

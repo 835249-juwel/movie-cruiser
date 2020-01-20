@@ -19,9 +19,9 @@
             <td><h1>Movies</h1></td>
         </tr>
         <tr>
-            <td colspan="3"><c:if test="${addFavoriteStatus==true }">
+            <th colspan="3"><c:if test="${addFavoriteStatus==true }">
                     <p>Movie added to Favorite Successfully</p>
-                </c:if></td>
+                </c:if></th>
         </tr>
         <col width="250" />
         <tr>
